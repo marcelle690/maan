@@ -1,0 +1,41 @@
+mon_projet/
+├── app/                                // Dossier principal de l'application
+│   ├── controllers/                    // Dossier contenant les contrôleurs
+│   │   ├── AuthController.php          // Contrôleur pour l'authentification
+│   │   ├── LogementController.php      // Contrôleur pour la gestion des logements
+│   │   ├── EvenementController.php     // Contrôleur pour la gestion des événements
+│   │   └── EchangeController.php       // Contrôleur pour la gestion des échanges
+│   ├── models/                         // Dossier contenant les modèles
+│   │   ├── Utilisateur.php             // Modèle pour les utilisateurs
+│   │   ├── Logement.php                // Modèle pour les logements
+│   │   ├── Evenement.php               // Modèle pour les événements
+│   │   └── Echange.php                 // Modèle pour les échanges
+│   └── views/                          // Dossier contenant les vues (HTML et PHP)
+│       ├── commun/                     // Vues communes (login, inscription, header, footer)
+│       │   ├── header.php              // Header commun
+│       │   ├── footer.php              // Footer commun
+│       │   ├── login.php               // Page de connexion
+│       │   └── inscription.php         // Page d'inscription
+│       ├── administrateur/             // Vues spécifiques pour les administrateurs
+│       │   └── index.php               // Page d'accueil de l'administrateur
+│       └── utilisateur/                // Vues spécifiques pour les utilisateurs standards
+│           └── index.php               // Page d'accueil de l'utilisateur
+├── config/                             // Dossier pour la configuration de l'application
+│   └── database.php                    // Fichier de configuration de la base de données
+├── core/                               // Dossier pour les classes de base et les utilitaires
+│   ├── Router.php                      // Classe pour le routage
+│   ├── Controller.php                  // Classe de base pour les contrôleurs
+│   └── Model.php                       // Classe de base pour les modèles
+├── vendor/                             // Dossier pour les bibliothèques externes (géré par Composer)
+├── public/                             // Dossier public (point d'entrée de l'application)
+│   ├── index.php                       // Fichier d'index principal (point d'entrée du site)
+│   ├── assets/                         // Dossier contenant les ressources front-end (CSS, JS, images)
+│   │   ├── css/
+│   │   │   └── style.css               // Fichier CSS principal
+│   │   ├── js/
+│   │   │   └── script.js               // Fichier JS principal
+│   │   └── images/
+│   │       └── logo.png                // Logo du site
+│   └── .htaccess                       // Fichier de configuration Apache (pour la réécriture d'URL)
+└── index.php                           // Fichier d'index principal (facultatif pour redirection)
+
